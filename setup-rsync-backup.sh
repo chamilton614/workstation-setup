@@ -2,8 +2,9 @@
 
 #Description:
 #This script is used to setup an rsync backup on a Workstation
-#Reference: https://www.howtogeek.com/135533/how-to-use-rsync-to-backup-your-data-on-linux/
-    https://ostechnix.com/backup-entire-linux-system-using-rsync/
+#References: 
+#    https://www.howtogeek.com/135533/how-to-use-rsync-to-backup-your-data-on-linux/
+#    https://ostechnix.com/backup-entire-linux-system-using-rsync/
 #Tested on Ubuntu 22.04
 
 #Install Prerequisites - Ubuntu
