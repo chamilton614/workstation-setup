@@ -6,6 +6,7 @@
 #Tested on Ubuntu 22.04
 
 #Install Prerequisites - Ubuntu
+sudo apt update
 sudo apt install software-properties-common apt-transport-https wget gpg
 
 #Download and Import Microsoft's GPG Key
@@ -20,7 +21,7 @@ sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packag
 sudo apt update
 
 #Install Visual Studio Code
-sudo apt install code
+sudo apt install code -y
 
 
 
