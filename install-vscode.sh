@@ -2,6 +2,7 @@
 
 #Description:
 #This script is used to install Visual Studio Code on a Workstation
+#Reference: https://linuxiac.com/install-visual-studio-code-on-ubuntu-22-04/
 #Tested on Ubuntu 22.04
 
 #Install Prerequisites - Ubuntu
