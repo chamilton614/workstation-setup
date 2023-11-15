@@ -24,5 +24,6 @@ apt-cache policy docker-ce
 #Install Docker
 sudo apt install docker-ce -y
 
-
+#Add Current User to the Docker group
+sudo usermod -aG docker ${USER}
 
