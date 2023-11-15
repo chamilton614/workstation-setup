@@ -27,3 +27,6 @@ sudo apt install docker-ce -y
 #Add Current User to the Docker group
 sudo usermod -aG docker ${USER}
 
+#Output Message to the User
+echo "Need to logout or reboot for the current user to be able to run docker commands without sudo"
+
