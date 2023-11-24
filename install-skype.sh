@@ -14,4 +14,5 @@ wget https://repo.skype.com/latest/skypeforlinux-64.deb
 #Install Skype
 sudo dpkg -i skypeforlinux-64.deb
 
-
+#Remove Downloaded Files
+rm -f skypeforlinux-64.deb
