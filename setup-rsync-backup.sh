@@ -20,7 +20,7 @@ SOURCE_DIR=/data2/home/chamilton/
 DESTINATION_DIR=/data/backups/data2-home-chamilton/
 
 #Rsync Options
-RSYNC_OPTIONS_1=-ravP
+RSYNC_OPTIONS_1=-ravhP
 RSYNC_OPTIONS_2=--delete
 
 #Rsync Command
@@ -28,7 +28,7 @@ rsync ${RSYNC_OPTIONS_1} ${RSYNC_OPTIONS_2} ${SOURCE_DIR} ${DESTINATION_DIR}
 
 #Cron Job Option - manual setup
 #crontab -e
-#0 2 * * * rsync -ravP --delete /data2/home/chamilton/ /data/backups/data2-home-chamilton/
+#0 2 * * * rsync -ravhP --delete /data2/home/chamilton/ /data/backups/data2-home-chamilton/
 
 
 
