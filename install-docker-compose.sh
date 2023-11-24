@@ -1,0 +1,34 @@
+#!/bin/bash
+
+#Description:
+#This script is used to install Docker-Compose on a Workstation
+#Reference: 
+#   https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-22-04
+#   https://github.com/docker/compose/releases
+#Tested on Ubuntu 22.04
+
+#Install Prerequisites - Ubuntu
+mkdir -p ~/.docker/cli-plugins
+
+
+#Download and Import
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+#Add the Docker Repository
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+#Run System Update to update the APT repository index
+sudo apt update
+
+#Verify the Docker install is coming from the Docker Repository not the Default Ubuntu Repository
+apt-cache policy docker-ce
+
+#Install Docker
+sudo apt install docker-ce -y
+
+#Add Current User to the Docker group
+sudo usermod -aG docker ${USER}
+
+#Output Message to the User
+echo "Need to logout or reboot for the current user to be able to run docker commands without sudo"
+
