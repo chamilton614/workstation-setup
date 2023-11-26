@@ -1,10 +1,7 @@
-
-
-
 #!/bin/bash
 
 #Description:
-#This script is used to install Skype on a Workstation
+#This script is used to install Go on a Workstation
 #Reference: https://go.dev/doc/install
 #Tested on Ubuntu 22.04
 
