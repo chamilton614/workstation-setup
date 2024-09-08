@@ -21,7 +21,7 @@ read somevalue
 sudo apt update
 
 #Install IntelliJ
-sudo tar -xzf /Downloads/ideaIC-*.tar.gz -C /opt
+sudo tar -xzf ~/Downloads/ideaIC-*.tar.gz -C /opt
 
 
 
