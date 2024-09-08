@@ -1,2 +1,5 @@
 #Ignore deb files
 *.deb
+
+#Ignore Crossvale files
+crossvale*
